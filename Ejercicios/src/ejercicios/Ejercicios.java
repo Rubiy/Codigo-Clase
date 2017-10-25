@@ -28,6 +28,21 @@ public class Ejercicios {
             case 2:
                 ejercicio2(sc);
                 break;
+            case 3:
+                ejercicio3(sc);
+                break;
+            case 4:
+                ejercicio4(sc);
+                break;
+            case 5:
+                ejercicio5(sc);
+                break;
+            case 6:
+                ejercicio6(sc);
+                break;
+            case 7:
+                ejercicio7(sc);
+                break;
             default:
                 System.out.println("opcion no valida");
 
@@ -37,7 +52,7 @@ public class Ejercicios {
     
     
     public static void ejercicio1(Scanner sc){     
-      //codigo ejercicio 1
+        //codigo ejercicio 1
         int num=0;
         int num2=0;
         System.out.println("Introducir primer numero");
@@ -51,11 +66,16 @@ public class Ejercicios {
     public static void ejercicio2(Scanner sc){
         //codigo ejercicio 2
         int resul;
-        for (int i=0; i<=20; i++) {
+        for (int i=1; i<=20; i++) {
             resul =5*i;
             System.out.println(resul); 
         };
 
     }
+ 
+    public static void ejercicio3(Scanner sc){
+        //codigo ejercicio 3
+        
     
+    }
 }
