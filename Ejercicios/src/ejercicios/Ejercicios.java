@@ -19,7 +19,7 @@ public class Ejercicios {
     public static void main(String[] args) {
         // TODO code application logic here
                 Scanner sc = new Scanner(System.in);
-        System.out.println("OPCIONES 1, 2,3,4");
+        System.out.println("OPCIONES 1, 2,3,4,5,6,7,8,9,10,11,12,13");
         int opcion = sc.nextInt();
         switch (opcion) {
             case 1:
@@ -44,6 +44,8 @@ public class Ejercicios {
         num = sc.nextInt();
         System.out.println("Introducir primer numero");
         num2 = sc.nextInt();
+        for (int i=num; i<num2; i++)
+            System.out.println(i);
     }
 
     public static void ejercicio2(Scanner sc){
