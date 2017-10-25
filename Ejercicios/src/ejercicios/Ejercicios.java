@@ -19,7 +19,7 @@ public class Ejercicios {
     public static void main(String[] args) {
         // TODO code application logic here
                 Scanner sc = new Scanner(System.in);
-        System.out.println("OPCIONES 1, 2,3,4,5,6,7,8,9,10,11,12,13");
+        System.out.println("OPCIONES 1,2,3,4,5,6,7,8,9,10,11,12,13");
         int opcion = sc.nextInt();
         switch (opcion) {
             case 1:
@@ -50,7 +50,12 @@ public class Ejercicios {
 
     public static void ejercicio2(Scanner sc){
         //codigo ejercicio 2
+        int resul;
+        for (int i=0; i<=20; i++) {
+            resul =5*i;
+            System.out.println(resul); 
+        };
+
     }
     
 }
-    
