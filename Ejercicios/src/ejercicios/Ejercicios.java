@@ -87,18 +87,26 @@ public class Ejercicios {
         for (int i=1; i<=20; i++) {
             resul =5*i;
             System.out.println(resul); 
-        };
+        }
 
     }
  
     public static void ejercicio3(Scanner sc){
         //codigo ejercicio 3
-        
-    
+        int num=0;
+        int num2=0;
+        for (int i=0; i<15; i++){
+            System.out.println("Introduce un numer");
+            num=sc.nextInt();
+            num2=num;
+        }
+            
     }
+    
     public static void ejercicio4(Scanner sc){
         //codigo ejercicio 4
     }
+    
     public static void ejercicio5(Scanner sc){
         //codigo ejercicio 5
         int num,hor,min,seg;
@@ -114,6 +122,7 @@ public class Ejercicios {
         int total = seg + min + hor;
         System.out.println(total + "s");
     }
+    
     public static void ejercicio6(Scanner sc){
         //codigo ejercicio 6
         int num,hor,min,seg;
@@ -124,13 +133,16 @@ public class Ejercicios {
         seg=num-((hor*3600)+(min*60));
         System.out.println(hor+"h "+min+"m "+seg+"s");
     }
+    
     public static void ejercicio7(Scanner sc){
         //codigo ejercicio 7
     }
+    
     public static void ejercicio8(Scanner sc){
         //codigo ejercicio 8
         
     }
+    
     public static void ejercicio9(Scanner sc){
         //codigo ejercicio 9
         int a,b,c,Mayor,Medio,Menor;
@@ -162,9 +174,11 @@ public class Ejercicios {
         System.out.println("el de los numeros ingresados es: ");
         System.out.println(Mayor+" "+Medio+" "+Menor);
         }
+    
     public static void ejercicio10(Scanner sc){
         //codigo ejercicio 10
     }
+    
     public static void ejercicio11(Scanner sc){
         //codigo ejercicio 11
         int nota=0;
@@ -195,9 +209,11 @@ public class Ejercicios {
             default: System.out.println("Error al introducir la nota");
         }
     }
+    
     public static void ejercicio12(Scanner sc){
         //codigo ejercicio 12
     }
+    
     public static void ejercicio13(Scanner sc){
         //codigo ejercicio 13
     }
