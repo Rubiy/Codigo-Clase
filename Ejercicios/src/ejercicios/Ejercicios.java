@@ -43,6 +43,24 @@ public class Ejercicios {
             case 7:
                 ejercicio7(sc);
                 break;
+            case 8:
+                ejercicio8(sc);
+                break;
+            case 9:
+                ejercicio9(sc);
+                break;
+            case 10:
+                ejercicio10(sc);
+                break;
+            case 11:
+                ejercicio11(sc);
+                break;
+            case 12:
+                ejercicio12(sc);
+                break;
+            case 13:
+                ejercicio13(sc);
+                break;
             default:
                 System.out.println("opcion no valida");
 
@@ -77,5 +95,35 @@ public class Ejercicios {
         //codigo ejercicio 3
         
     
+    }
+    public static void ejercicio4(Scanner sc){
+        //codigo ejercicio 4
+    }
+    public static void ejercicio5(Scanner sc){
+        //codigo ejercicio 5
+    }
+    public static void ejercicio6(Scanner sc){
+        //codigo ejercicio 6
+    }
+    public static void ejercicio7(Scanner sc){
+        //codigo ejercicio 7
+    }
+    public static void ejercicio8(Scanner sc){
+        //codigo ejercicio 8
+    }
+    public static void ejercicio9(Scanner sc){
+        //codigo ejercicio 9
+    }
+    public static void ejercicio10(Scanner sc){
+        //codigo ejercicio 10
+    }
+    public static void ejercicio11(Scanner sc){
+        //codigo ejercicio 11
+    }
+    public static void ejercicio12(Scanner sc){
+        //codigo ejercicio 12
+    }
+    public static void ejercicio13(Scanner sc){
+        //codigo ejercicio 13
     }
 }
