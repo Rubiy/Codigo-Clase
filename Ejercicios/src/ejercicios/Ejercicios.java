@@ -101,9 +101,28 @@ public class Ejercicios {
     }
     public static void ejercicio5(Scanner sc){
         //codigo ejercicio 5
+        int num,hor,min,seg;
+        System.out.println("ingrese las horas ");
+        int num1 = sc.nextInt();
+                System.out.println("ingrese los minutos ");
+        int num2 = sc.nextInt();
+        System.out.println("ingrese los segundos ");
+        int num3 = sc.nextInt();
+        hor=num1*3600;
+        min=num2*60;
+        seg=num3;
+        int total = seg + min + hor;
+        System.out.println(total + "s");
     }
     public static void ejercicio6(Scanner sc){
         //codigo ejercicio 6
+        int num,hor,min,seg;
+        System.out.println("ingrese los segundos ");
+        num=sc.nextInt();
+        hor=num/3600;
+        min=(num-(3600*hor))/60;
+        seg=num-((hor*3600)+(min*60));
+        System.out.println(hor+"h "+min+"m "+seg+"s");
     }
     public static void ejercicio7(Scanner sc){
         //codigo ejercicio 7
