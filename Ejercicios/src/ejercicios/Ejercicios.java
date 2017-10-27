@@ -315,16 +315,21 @@ public class Ejercicios {
     
     public static void ejercicio13(Scanner sc){
         //codigo ejercicio 13
-        int i=0, j=0, div=0,raiz=0;
-        for (i=1;i<101;i++){ 
-            div=0; 
-            raiz=(int)sqrt(i);
-            for (j=1;j<=raiz;j++){ 
-                if (i%j==0)
-                div++;
+        int num=0;
+        int i;
+        System.out.println("Introduce numero");
+        num = sc.nextInt();
+        boolean primo=true;
+        for (int i=num;i>=2;i--){
+            primo = true;
+            for (int j=2; j<i;j++){
+                if (i%j==0){
+                    primo=false;
+                }
             }
-        if (div<=1)
-        System.out.println (i + " es numero primo" );
+            if (primo){
+                System.out.println(i+"\n");
+            }
         }
     }
-}
+} 
