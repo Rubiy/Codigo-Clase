@@ -213,6 +213,44 @@ public class Ejercicios {
     
     public static void ejercicio10(Scanner sc){
         //codigo ejercicio 10
+        int nota=0;
+        System.out.println("Introduce la nota");
+        nota=sc.nextInt();
+        switch (nota) {
+            case 0:
+                System.out.println("La nota es Cero");
+                break;
+            case 1:
+                System.out.println("La nota es Uno");
+                break;
+            case 2:
+                System.out.println("La nota es Dos");
+                break;
+            case 3:
+                System.out.println("La nota es Tres");
+                break;
+            case 4:
+                System.out.println("La nota es Cuatro"); 
+                break;
+            case 5:
+                System.out.println("La nota es Cinco");
+                break;
+            case 6: 
+                System.out.println("La nota es Seis"); 
+                break;
+            case 7:
+                System.out.println("La nota es Siete");
+                break;
+            case 8: 
+                System.out.println("La nota es Ocho"); 
+                break;
+            case 9:
+                System.out.println("La nota es Nueve");
+            case 10: 
+                System.out.println("La nota es Diez"); 
+                break;
+            default: System.out.println("Error al introducir la nota");
+        }
     }
     
     public static void ejercicio11(Scanner sc){
@@ -282,11 +320,11 @@ public class Ejercicios {
             div=0; 
             raiz=(int)sqrt(i);
             for (j=1;j<=raiz;j++){ 
-            if (i%j==0)
-            div++;
+                if (i%j==0)
+                div++;
             }
         if (div<=1)
         System.out.println (i + " es numero primo" );
-     }
-   }
+        }
+    }
 }
