@@ -105,6 +105,18 @@ public class Ejercicios {
     
     public static void ejercicio4(Scanner sc){
         //codigo ejercicio 4
+        System.out.println ("Introduce valores");
+        int numval = sc.nextInt();
+        int contador = 0;
+        int sumatorio = 0;
+        do {
+            contador ++;
+            System.out.println("Introduce un numero");
+            int nuevonum = sc.nextInt();
+            sumatorio = sumatorio + nuevonum;
+        }while (contador != numval);
+        int media= (sumatorio/numval);
+        System.out.println("La media es " +media); 
     }
     
     public static void ejercicio5(Scanner sc){
@@ -212,6 +224,31 @@ public class Ejercicios {
     
     public static void ejercicio12(Scanner sc){
         //codigo ejercicio 12
+        int alumnos;
+        double nota = 0;
+        double aprobados = 0;
+        double suspensos = 0;
+        double media;
+        double suma = 0;
+
+        System.out.println("Introduce el numero de alumnos");
+        alumnos = sc.nextInt();
+
+        for (int i=0; i<alumnos; i++){
+            System.out.println("Introduce la nota: ");
+            nota = sc.nextInt();
+            suma = suma + nota;
+            if (nota < 5){
+              suspensos++;
+            } else {
+                aprobados++;
+            }
+
+        }
+            media = suma / alumnos;
+            System.out.println("La media de las notas es: " + media);
+            System.out.println("El numero de aprobados es: " + aprobados);
+            System.out.println("El numero de suspensos es: " + suspensos);
     }
     
     public static void ejercicio13(Scanner sc){
