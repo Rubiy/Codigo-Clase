@@ -5,6 +5,7 @@
  */
 package ejercicios;
 
+import static java.lang.Math.sqrt;
 import java.util.Scanner;
 
 /**
@@ -148,12 +149,36 @@ public class Ejercicios {
     
     public static void ejercicio7(Scanner sc){
         //codigo ejercicio 7
+        int mayor = 0;
+        int menor = 0;
+        for(int i=10; i>0; i--){
+            System.out.println("Introduce numero");
+            int num = sc.nextInt();
+            if (i > 9){
+                mayor= num;
+                menor= num;
+            }
+            else if (i < 10){
+                if (num > mayor){
+                    mayor = num;}
+                else if (num < menor){
+                    menor = num;}
+            }
+        }
+        System.out.println("el numero mayor es " + mayor + " y el menor es " + menor) ;
     }
     
     public static void ejercicio8(Scanner sc){
         //codigo ejercicio 8
-        
-    }
+        Scanner leer=new Scanner(System.in);
+        int n,fact = 1,i;
+        System.out.println("dame el numero que quieras y sacare su factorial");
+        n=leer.nextInt();
+        for (i=n;i>=1;i--){
+            fact=fact*i;
+        }
+        System.out.println("el factorial de tu numero es -> "+ fact);
+        }
     
     public static void ejercicio9(Scanner sc){
         //codigo ejercicio 9
@@ -182,7 +207,6 @@ public class Ejercicios {
         else
         Menor=c;
         Medio=(a+b+c)-(Mayor+Menor);
-        System.out.println("");
         System.out.println("el de los numeros ingresados es: ");
         System.out.println(Mayor+" "+Medio+" "+Menor);
         }
@@ -253,5 +277,16 @@ public class Ejercicios {
     
     public static void ejercicio13(Scanner sc){
         //codigo ejercicio 13
-    }
+        int i=0, j=0, div=0,raiz=0;
+        for (i=1;i<101;i++){ 
+            div=0; 
+            raiz=(int)sqrt(i);
+            for (j=1;j<=raiz;j++){ 
+            if (i%j==0)
+            div++;
+            }
+        if (div<=1)
+        System.out.println (i + " es numero primo" );
+     }
+   }
 }
