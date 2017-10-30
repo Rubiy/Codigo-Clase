@@ -316,13 +316,12 @@ public class Ejercicios {
     public static void ejercicio13(Scanner sc){
         //codigo ejercicio 13
         int num=0;
-        int i;
-        System.out.println("Introduce numero");
+        System.out.println("Introduce un numero");
         num = sc.nextInt();
-        boolean primo=true;
-        for (int i=num;i>=2;i--){
+        boolean primo;
+        for (int i=2; i<=num; i++){
             primo = true;
-            for (int j=2; j<i;j++){
+            for (int j=2; j<i; j++){
                 if (i%j==0){
                     primo=false;
                 }
