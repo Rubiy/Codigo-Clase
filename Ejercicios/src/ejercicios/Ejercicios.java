@@ -298,7 +298,7 @@ public class Ejercicios {
 
         for (int i=0; i<alumnos; i++){
             System.out.println("Introduce la nota: ");
-            nota = sc.nextInt();
+            nota = sc.nextDouble();
             suma = suma + nota;
             if (nota < 5){
               suspensos++;
