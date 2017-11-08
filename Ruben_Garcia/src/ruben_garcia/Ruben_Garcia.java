@@ -32,7 +32,7 @@ public class Ruben_Garcia {
                 ejercicio3(sc);
                 break;
             case 4:
-                //ejercicio4(sc);
+                ejercicio4(sc);
                 break;
             case 5:
                 //ejercicio5(sc);
@@ -61,6 +61,18 @@ public class Ruben_Garcia {
             case 13:
                 //ejercicio13(sc);
                 break;
+            case 14:
+                //ejercicio14(sc);
+                break;
+            case 15:
+                //ejercicio15(sc);
+                break;
+            case 16:
+                //ejercicio16(sc);
+                break;
+            case 17:
+                //ejercicio17(sc);
+                break;
             default:
                 System.out.println("opcion no valida");
         }
@@ -73,6 +85,7 @@ public class Ruben_Garcia {
             System.out.println("Introduce un numero");
             leer[i] = sc.nextInt();
         }
+        System.out.println("El orden es:");
         for (int i=0;i<leer.length;i++)
             System.out.println(leer[i]);
     }
@@ -84,6 +97,7 @@ public class Ruben_Garcia {
             System.out.println("Introduce un numero");
             leer[i] = sc.nextInt();
         }
+        System.out.println("El orden es:");
         for (int i=4;i>=0;i--)
             System.out.println(leer[i]);
     }
@@ -95,7 +109,7 @@ public class Ruben_Garcia {
         int [] numeros = new int[numerosleer];
         //pedir numeros y meterlos en el array
         for (int i=0; i<numeros.length;i++){
-            System.out.println("Introduce numero");
+            System.out.println("Introduce un numero");
             numeros[i] = sc.nextInt();
         }
         //recorrer array buscando cero
@@ -103,11 +117,9 @@ public class Ruben_Garcia {
         for (int i=0;i<numeros.length;i++){
             if (numeros[i]==0){
                 ceros++;
-            }
-            
+            }   
         }
-        
-        //recorrer array buscando los pares e impares
+        //recorrer array buscando los positivos y negativos
         int numPositivo=0;
         int numNegativo=0;
         for (int i=0;i<numeros.length; i++){
@@ -118,10 +130,9 @@ public class Ruben_Garcia {
                 numNegativo++;
             }
         }
-        //declarar array pares e impares
         int [] positivos = new int[numPositivo];
         int [] negativos = new int[numNegativo];
-        //recorrer array para meter los pares e impares en su array
+        //recorrer array para meter los positivos y negativos en su array
         int indicePositivo=0;
         int indiceNegativo=0;
         for (int i=0;i<numeros.length; i++){
@@ -134,12 +145,12 @@ public class Ruben_Garcia {
                 indiceNegativo++;        
             }
         }
-        //recorrer array de pares dar media
+        //recorrer array de positivos dar media
         double mediaPositivo = 0;
         for (int i = 0; i < positivos.length; i++) {
             mediaPositivo += positivos[i];
         }
-        //recorrer array de impares dar media   
+        //recorrer array de negativos dar media   
         double mediaNegativo = 0;
         for (int i = 0; i < negativos.length; i++) {
             mediaNegativo += negativos[i];
@@ -148,4 +159,18 @@ public class Ruben_Garcia {
         System.out.println("La media de negativos es " + mediaNegativo / numNegativo);
         System.out.println("Los ceros que hay son " +ceros);
     }
+
+    public static void ejercicio4(Scanner sc) {
+        //ejercicio4
+        int [] leer = new int [10];
+        for (int i=0;i<leer.length;i++){
+            System.out.println("Introduce un numero");
+            leer[i] = sc.nextInt();
+        }
+        System.out.println("el orden es:");
+        for (int i=0, y=9 ;i<5; i++, y--){
+            System.out.println(leer[i]+"\n"+leer[y]);
+        }
+    }
+    
 }
