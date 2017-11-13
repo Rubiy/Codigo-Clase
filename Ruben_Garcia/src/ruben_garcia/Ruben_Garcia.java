@@ -35,7 +35,7 @@ public class Ruben_Garcia {
                 ejercicio4(sc);
                 break;
             case 5:
-                //ejercicio5(sc);
+                ejercicio5(sc);
                 break;
             case 6:
                 //ejercicio6(sc);
@@ -173,4 +173,27 @@ public class Ruben_Garcia {
         }
     }
     
+    public static void ejercicio5(Scanner sc) {
+        //ejercicio5
+        int [] tabla1 = new int [10];
+        int [] tabla2 = new int [10];
+        for (int i=0; i<tabla1.length;i++){
+            System.out.println("Introducir un valor para la tabla1");
+            tabla1[i] = sc.nextInt();
+        }
+        for (int i=0; i<tabla2.length; i++){
+            System.out.println("Introducir un valor para la tabla2");
+            tabla2[i] =sc.nextInt();
+        }
+        int [] tabla3 = new int [20];
+        int contador=0;
+        for (int i=0; i<tabla3.length; i=i+2){
+            tabla3[i]=tabla1[contador];
+            tabla3[i+1]=tabla2[contador];
+            contador++;
+        }
+        for (int i=0; i<tabla3.length; i++){
+            System.out.println(tabla3[i]+"");
+        }
+    }
 }
