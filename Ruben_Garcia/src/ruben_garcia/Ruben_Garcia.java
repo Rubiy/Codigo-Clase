@@ -38,40 +38,40 @@ public class Ruben_Garcia {
                 ejercicio5(sc);
                 break;
             case 6:
-                //ejercicio6(sc);
+                ejercicio6(sc);
                 break;
             case 7:
-                //ejercicio7(sc);
+                ejercicio7(sc);
                 break;
             case 8:
-                //ejercicio8(sc);
+                ejercicio8(sc);
                 break;
             case 9:
-                //ejercicio9(sc);
+                ejercicio9(sc);
                 break;
             case 10:
-                //ejercicio10(sc);
+                ejercicio10(sc);
                 break;
             case 11:
-                //ejercicio11(sc);
+                ejercicio11(sc);
                 break;
             case 12:
-                //ejercicio12(sc);
+                ejercicio12(sc);
                 break;
             case 13:
-                //ejercicio13(sc);
+                ejercicio13(sc);
                 break;
             case 14:
-                //ejercicio14(sc);
+                ejercicio14(sc);
                 break;
             case 15:
-                //ejercicio15(sc);
+                ejercicio15(sc);
                 break;
             case 16:
-                //ejercicio16(sc);
+                ejercicio16(sc);
                 break;
             case 17:
-                //ejercicio17(sc);
+                ejercicio17(sc);
                 break;
             default:
                 System.out.println("opcion no valida");
@@ -195,5 +195,98 @@ public class Ruben_Garcia {
         for (int i=0; i<tabla3.length; i++){
             System.out.println(tabla3[i]+"");
         }
+    }
+    
+    public static void ejercicio6(Scanner sc) {
+        int [] tabla1 = new int [12];
+        int [] tabla2 = new int [12];
+        int [] tabla3 = new int [24];
+        for (int i=0; i<tabla1.length;i++){
+            System.out.println("Introducir un valor para la tabla1");
+            tabla1[i] = sc.nextInt();
+        }
+        for (int i=0; i<tabla2.length; i++){
+            System.out.println("Introducir un valor para la tabla2");
+            tabla2[i] =sc.nextInt();
+        }
+        int x=0;
+        for (int i=0; i<12; i=+3){
+            for (int cont=0; cont<3; cont++){
+                tabla3[x]=tabla1[cont+i];
+                x++;
+            }
+            for (int cont=0; cont<3; cont++){
+                tabla3[x]=tabla2[cont+i];
+                x++;
+            }
+        }
+        for (int i=0; i<tabla3.length; i++){
+                System.out.println(tabla3[i]+" , ");
+            }
+        
+    }
+    
+    public static void ejercicio7(Scanner sc){
+        int [] tabla1 = new int [10];
+        boolean creciente=false;
+        boolean decreciente=false;
+        for (int i=0; i<tabla1.length;i++){
+            System.out.println("Introducir un valor para la tabla1");
+            tabla1[i] = sc.nextInt();
+        }
+        for (int i=0; i<tabla1.length; i++){
+            if (tabla1[i]<tabla1[i+1]){
+                creciente=true;
+            }
+            if (tabla1[i]>tabla1[i+1]){
+                decreciente=true;
+            }
+        }
+        if (creciente==true && decreciente==false){
+            System.out.println("El array es creciente");
+        }
+        else if (creciente==false){
+            
+        }
+    }
+    
+    public static void ejercicio8(Scanner sc){
+        
+    }
+    
+    public static void ejercicio9(Scanner sc){
+        
+    }
+    
+    public static void ejercicio10(Scanner sc){
+        
+    }
+    
+    public static void ejercicio11(Scanner sc){
+        
+    }
+    
+    public static void ejercicio12(Scanner sc){
+        
+    }
+    
+    public static void ejercicio13(Scanner sc){
+        
+    }
+    
+    public static void ejercicio14(Scanner sc){
+        
+    }
+    
+    public static void ejercicio15(Scanner sc){
+        
+    }
+    
+    public static void ejercicio16(Scanner sc){
+        
+    }
+    
+    public static void ejercicio17(Scanner sc){
+        
     }
 }
