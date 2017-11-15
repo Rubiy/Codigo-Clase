@@ -210,7 +210,7 @@ public class Ruben_Garcia {
             tabla2[i] =sc.nextInt();
         }
         int x=0;
-        for (int i=0; i<12; i=+3){
+        for (int i=0; i<12; i+=3){
             for (int cont=0; cont<3; cont++){
                 tabla3[x]=tabla1[cont+i];
                 x++;
@@ -234,7 +234,7 @@ public class Ruben_Garcia {
             System.out.println("Introducir un valor para la tabla1");
             tabla1[i] = sc.nextInt();
         }
-        for (int i=0; i<tabla1.length; i++){
+        for (int i=0; i<9; i++){
             if (tabla1[i]<tabla1[i+1]){
                 creciente=true;
             }
@@ -245,8 +245,11 @@ public class Ruben_Garcia {
         if (creciente==true && decreciente==false){
             System.out.println("El array es creciente");
         }
-        else if (creciente==false){
-            
+        else if (creciente==false && decreciente==true){
+            System.out.println("El array es decreciente");
+        }
+        else if (creciente==true && decreciente==true){
+            System.out.println("El array esta desordenado");
         }
     }
     
@@ -255,6 +258,21 @@ public class Ruben_Garcia {
     }
     
     public static void ejercicio9(Scanner sc){
+        int [] tabla1 = new int [10];
+        int ultimo;
+        for (int i=0; i<tabla1.length; i++){
+            System.out.println("Introducir numero");
+                tabla1[i] = sc.nextInt();
+        }
+        ultimo=tabla1[9];
+        for (int i=8; i>=0; i--){
+            tabla1[i+1]=tabla1[i];
+        }
+        tabla1[0]= ultimo;
+        System.out.println("\nEl nuevo orden del arrays es");
+        for (int i=0; i<10; i++){
+            System.out.println(tabla1[i]);
+        }
         
     }
     
@@ -289,4 +307,5 @@ public class Ruben_Garcia {
     public static void ejercicio17(Scanner sc){
         
     }
+
 }
