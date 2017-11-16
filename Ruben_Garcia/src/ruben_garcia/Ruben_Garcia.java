@@ -254,7 +254,31 @@ public class Ruben_Garcia {
     }
     
     public static void ejercicio8(Scanner sc){
+        int [] tabla1 = new int [10];
+        int numero;
+        int posicion;
+        for (int i=0; i<8; i++){
+            System.out.println("Introducir numero para el array");
+                tabla1[i] = sc.nextInt();
+        }
+        System.out.println("Introducir numero y posicion para introducir en el arrays");
+        System.out.println("numero");
+        numero = sc.nextInt();
+        System.out.println("posición");
+        posicion = sc.nextInt();
+        posicion=posicion-1;
+            
+        int aux;
+        for (int i=posicion; i<tabla1.length; i++){
+            aux=tabla1[i];
+            tabla1[i]=numero;
+            numero=aux;
+        }
         
+        System.out.println("\nEl nuevo orden del arrays es");
+        for (int i=0; i<10; i++){
+            System.out.println(tabla1[i]);
+        }
     }
     
     public static void ejercicio9(Scanner sc){
