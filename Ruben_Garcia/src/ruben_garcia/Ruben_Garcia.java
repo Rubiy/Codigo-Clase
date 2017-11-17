@@ -301,7 +301,30 @@ public class Ruben_Garcia {
     }
     
     public static void ejercicio10(Scanner sc){
+        int [] tabla1 = new int [10];
+        int numero;
+        int posicion;
+        for (int i=0; i<tabla1.length; i++){
+            System.out.println("Introducir numero para el array");
+                tabla1[i] = sc.nextInt();
+        }
+        System.out.println("Introducir posicion para mover el arrays");
+
+        System.out.println("posición");
+        posicion = sc.nextInt();
+            
+        int [] arrayFinal = new int [10];
+        for (int i=0; i<arrayFinal.length - posicion; i++){
+            arrayFinal[posicion+i] = tabla1[i];
+        }
+        for (int i=1; i<=posicion; i++){
+            arrayFinal[posicion-i] = tabla1[tabla1.length-i];
+        }
         
+        System.out.println("\nEl nuevo orden del arrays es");
+        for (int i=0; i<tabla1.length; i++){
+            System.out.println(arrayFinal[i]);
+        }
     }
     
     public static void ejercicio11(Scanner sc){
